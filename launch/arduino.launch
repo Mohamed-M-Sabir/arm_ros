@@ -1,0 +1,7 @@
+<launch>
+<node name="joy_node" pkg="joy" type="joy_node"/>
+<node name="Joy2Turtle" pkg="arm" type="joystick.py"/>
+<node pkg="rosserial_python" type="serial_node.py" name="mine_detector">
+<param name="port" value="/dev/ttyACM0"/>
+</node>
+</launch>
